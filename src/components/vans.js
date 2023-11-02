@@ -4,6 +4,7 @@ import "../App.css";
 import { Link } from "react-router-dom";
 import load1 from "../images/load1.gif"
 import ShoeCard from "./ShoeCard";
+import logo from "../images/logo.jpg"
 
 function Vans () {
 
@@ -44,11 +45,12 @@ return(
 
 <div className="w-full p-2 m-4 flex">
           
-            <div className="w-[20%]">
-            <Link to="/">Home</Link>
+            <div className="w-[20%] flex">
+            <Link to="/"> <img src={logo} alt="" className="w-30 h-20"></img></Link>
+            <Link to="/" className="mt-5">Home</Link>
             </div>
             {isLoading ? (
-          <div className=" w-full h-full ml-80 mt-40 justify-center ">
+          <div className=" w-60 h-80 mx-auto border border-black mt-40 p-10 ">
             <h1>Loading...</h1>
             <img src={load1} alt="" className="w-30 h-30 "></img>
           </div>

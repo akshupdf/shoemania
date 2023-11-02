@@ -12,13 +12,12 @@ function App() {
     <div className="">
 
 <BrowserRouter>
-      
+<Navbar />
       <Routes> 
       <Route exact path='/' element={<Home />}></Route>
       <Route exact path='/nike' element={<Nike />}> </Route>
       <Route exact path='/vans' element={<Vans />}> </Route>
       <Route exact path='/adidas' element={<Adidas />} ></Route>
-      <Route exact path='/navbar' element={<Navbar />}></Route>
       </Routes>
       </BrowserRouter>
       

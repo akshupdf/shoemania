@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 // import ModelLoader from "./modelLoader";
 import ShoeCard from "./ShoeCard";
 import load1 from "../images/load1.gif"
+import logo from "../images/logo.jpg"
+
 function Adidas () {
 
 
@@ -49,8 +51,9 @@ return(
 
 <div className="w-full p-2 m-4 flex">
 
-            <div className="w-[20%]">
-              <Link to="/">Home</Link>
+            <div className="w-[20%] flex">
+            <Link to="/"> <img src={logo} alt="" className="w-30 h-20"></img></Link>
+            <Link to="/" className="mt-5">Home</Link>
             </div>
             {isLoading ? (
               <div className=" w-60 h-80 mx-auto border border-black mt-40 p-10 ">
