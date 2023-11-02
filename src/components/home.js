@@ -3,6 +3,7 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import "../App.css";
 import ModelLoader from "./modelLoader";
+import { Link } from "react-router-dom";
 
 
 function Home () {
@@ -60,14 +61,14 @@ function Home () {
             <div className="flex w-[100%] mx-auto bg-white">
                 <div className="w-[30%] h-80 text-4xl bold italic p-10 mx-auto mt-40">
                 <h1>{item.title}</h1>
-                <a href={item.link} class="relative inline-block text-lg group mt-5 ml-12">
+                <Link to={item.link} class="relative inline-block text-lg group mt-5 ml-12">
 <span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
 <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
 <span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
 <span class="relative">{item.button}</span>
 </span>
 <span class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
-</a>
+</Link>
                 </div>
                 <div className="h-[80vh] w-[50%] hover:shadow-2xl m-4">
         <Canvas camera={{ position: item.campos , fov: item.fov }}>
