@@ -45,9 +45,9 @@ function Home () {
 
 
     return (
-        <div className="mx-auto  overflow-y-scroll bg-cover bg-fixed bg-center bg-no-repeat shadow-lg " style={{backgroundImage : `url("https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/fdded470-0ac5-4bd7-b41b-1bb63e161438/custom-nike-air-force-1-mid-by-you-shoes.png")`}}>
+        <div className="mx-auto  overflow-y-scroll bg-cover bg-fixed bg-center bg-no-repeat shadow-lg sm:w-80 lg:w-[100%]" style={{backgroundImage : `url("https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/fdded470-0ac5-4bd7-b41b-1bb63e161438/custom-nike-air-force-1-mid-by-you-shoes.png")`}}>
         <div className="mt-40">
-            <h1 className="relative text-8xl font-bold drop-shadow-2xl ml-20 italic text-white ">ShoeMania</h1>
+            <h1 className="relative lg:text-8xl sm:text-6xl font-bold drop-shadow-2xl ml-20 italic text-white ">ShoeMania</h1>
             </div>
             
            
@@ -58,19 +58,19 @@ function Home () {
 
             {data.map((item, index) => (
                 <div key={index}>
-            <div className="flex w-[100%] mx-auto bg-white">
-                <div className="w-[30%] h-80 text-4xl bold italic p-10 mx-auto mt-40">
+            <div className="lg:flex lg:w-[100%] sm:w-80 mx-auto bg-white ">
+                <div className="lg:w-[30%] sm:w-10 lg:h-80 lg:text-4xl sm:text-xs bold italic lg:p-10 sm:p-4  lg:mx-auto mt-40">
                 <h1>{item.title}</h1>
-                <Link to={item.link} class="relative inline-block text-lg group mt-5 ml-12">
-<span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
-<span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
-<span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
-<span class="relative">{item.button}</span>
+                <Link to={item.link} className="relative inline-block lg:text-lg group mt-5 lg:ml-12 sm:text-xs">
+<span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+<span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+<span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
+<span className="relative">{item.button}</span>
 </span>
-<span class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
+<span className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
 </Link>
                 </div>
-                <div className="h-[80vh] w-[50%] hover:shadow-2xl m-4">
+                <div className="lg:h-[80vh] sm:h-[50vh] lg:w-[50%] sm:w-50 hover:shadow-2xl m-4">
         <Canvas camera={{ position: item.campos , fov: item.fov }}>
               <ambientLight intensity={item.int} />
               <directionalLight intensity={item.dirint} position={item.dirpos} />

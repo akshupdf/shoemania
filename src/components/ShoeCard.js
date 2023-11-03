@@ -53,7 +53,7 @@ function ShoeCard ({fov , campos , dirpos , dirint,title ,model,desc} ) {
             </div>
             <div className="px-5 pb-5 ">
               <div className="h-[10vh]">
-                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-black">
+                <h5 className="lg:text-xl sm:text-l font-semibold tracking-tight text-gray-900 dark:text-black">
                  {title}
                 </h5>
               </div>

@@ -51,7 +51,7 @@ return(
 
 <div className="w-full p-2 m-4 flex">
 
-            <div className="w-[20%] flex">
+            <div className="lg:w-[20%] sm:w-5 flex">
             <Link to="/"> <img src={logo} alt="" className="w-30 h-20"></img></Link>
             <Link to="/" className="mt-5">Home</Link>
             </div>
@@ -61,7 +61,7 @@ return(
             <img src={load1} alt="" className="w-30 h-30 "></img>
           </div>
         ) : (
-            <div className="w-[80%] mt-10 flex">
+            <div className="w-[80%] mt-20 lg:flex">
             {data.map((item, index) => (
             <ShoeCard               
        key={index}
