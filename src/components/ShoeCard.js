@@ -35,7 +35,7 @@ function ShoeCard ({fov , campos , dirpos , dirint,title ,model,desc} ) {
     return (
         <div className="w-full max-w-sm p-2 m-4 bg-white border border-gray-200 rounded-lg shadow dark:text-black dark:border-gray-700 overflow-hidden">
             <div className="w-auto h-[50vh]">
-              <div className="w-[46vh] h-[40vh]  hover:shadow-2xl pt-10 rounded-xl italic ">
+              <div className="w-[46vh] h-[40vh]  shadow-2xl pt-10 rounded-xl italic ">
               <Canvas camera={{ position: campos, fov: fov  }}>
               <ambientLight intensity={2} />
               <directionalLight intensity={dirint} position={dirpos} />

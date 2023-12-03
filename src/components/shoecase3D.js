@@ -35,7 +35,7 @@ function ShowCase3d ({ onClose  , fov , campos , dirpos , dirint,title ,model , 
         </button>
    
     <div className="lg:flex lg:w-[200vh] sm:[100vh]">
-    <div className='lg:w-[40%] sm:w-[100%] lg:h-[80vh] sm:h-auto shadow-2xl pt-10 rounded-xl italic  mt-10 lg:mr-10 sm:mr-0' >
+    <div className='lg:w-[40%] sm:w-[100%] lg:h-[80vh] sm:h-auto shadow-2xl pt-10 rounded-xl italic bg-gray-600  mt-10 lg:mr-10 sm:mr-0 cursor-pointer' >
     {isLoading ? (
           <div className="text-center text-4xl">Loading...</div>
         ) : (
